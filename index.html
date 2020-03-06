@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Mina">
+    <meta charset="UTF-8">
+    <title> 20160882 Shynar Torekhan </title>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"> -->
+    <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />  <link href="./capital_game.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!--Your HTML here-->
+    <div id="outer"> 
+      <div id="inner">
+        <h1>  <span> Do you know the capital of this country? </span> </h1>
+        <div id="mptbl">
+        <iframe 
+          id ="mymap"
+          width="500px"
+          height="400px"
+          frameborder="0" style="border:0"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCla3bgMM2Y3ruN00PEQ632st0N04hulkQ&q=Almaty&maptype=satellite" allowfullscreen>
+        </iframe>
+    <!--Your code here-->
+    <table id = "table" cellpadding="5"> 
+      <tbody>
+      <tr id = "header">
+        <th align = "left">
+          Country
+        </th>
+        <th align = "left">
+          Capital
+        </th>
+        <th align = "left">
+          Answer
+        </th>
+      </tr>
+      <tr class = "general">
+        <td class = "cntry" id = "pr2__question">
+          </td>
+        <td>
+          <form action="/action_page.php">
+            <input id="pr2__answer" type = "text" autofocus>
+            </form>
+          </td>
+        <td>
+          <button type="button" id = "pr2__submit">
+            See Answer
+            </button>
+          </td>
+      </tr>
+      <tr>
+        <td colSpan = "3" id = "radios"> 
+          <form>
+          <input id = "all" name = "r" type="radio" checked="checked" onclick="allfun()"> All 
+          <input id = "crctonly" name = "r" type="radio" onclick="crctfun()"> Correct Only 
+          <input id = "wrngonly" name = "r" type="radio" onclick="wrngfun()"> Wrong Only
+          </form>
+          </td>
+        </tr>
+        <tr class = "general fixed">
+          <td colspan = "5" id="hidden">
+            <button type="button" id = "pr3__undo" disabled="disabled">
+            Undo
+            </button>
+          <button type="button" id = "pr3__clear">
+            Clear
+            </button>
+            <button type="button" id = "pr3__reset"> 
+            Reset
+            </button>
+          </td> 
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  </div>
+    <script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+    <!-- <script src="./country_capital_pairs.js"></script> -->
+    <script src="./capital_game.js"></script>
+  </body>
+</html>

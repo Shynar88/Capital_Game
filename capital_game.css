@@ -1,0 +1,76 @@
+body {
+    background-color: #eee;
+}
+
+/*your code here*/
+#outer{
+  text-align: center;
+    }
+#inner{
+  display: inline-block;
+    }
+#mptbl{
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+td {
+  text-align: left;
+}
+
+.cntry{
+  cursor: pointer;
+}
+
+/*#inner {
+  width: 50%;
+  margin: 0 auto;
+}
+*/
+/*your code here*/
+h1{
+  font-family: 'Mina', serif;
+}
+
+.bl {
+  color: blue;
+}
+
+.rd {
+  color: red;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+/*#hidden td{
+  white-space: pre;
+}*/
+
+/*.correct {
+  color: blue
+}
+
+.wrong {
+  color: red
+}
+
+.incorrect {
+  text-decoration: line-through;
+}*/
+
+#table {
+    border-collapse: collapse;
+}
+
+
+#header th{
+    border-bottom: 1px solid black;
+}
+
+.general td{
+    border-bottom: 1px solid #cccccc;
+}
+
